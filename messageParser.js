@@ -1,4 +1,4 @@
-let input = require(`./messagetext/${4}.json`);
+let input = require(`./messagetext/${17}.json`);
 const fs = require("fs");
 
 let sender = [];
@@ -32,7 +32,7 @@ for (let i = 0; i < messagesJSON.length; i++) {
   }
 }
 
-fs.writeFile("train.from", sender.join("\n"), "utf8", err => {
+fs.writeFile("train2.from", sender.join("\n"), "utf8", err => {
   if (err) {
     return console.log(err);
   } else {
@@ -40,7 +40,7 @@ fs.writeFile("train.from", sender.join("\n"), "utf8", err => {
   }
 });
 
-fs.writeFile("train.to", reciever.join("\n"), "utf8", err => {
+fs.writeFile("train2.to", reciever.join("\n"), "utf8", err => {
   if (err) {
     return console.log(err);
   } else {
